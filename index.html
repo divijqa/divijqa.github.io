@@ -8,7 +8,7 @@
 
     <meta
         name="description"
-        content="Divij Mothe is an SDET building AI-assisted test automation systems with Playwright, Java, TypeScript, API automation and MCP."
+        content="Divij Mothe — SDET focused on AI-assisted test automation, Playwright, Java, TypeScript, REST API automation, MCP and CI/CD."
     >
 
     <meta name="author" content="Divij Mothe">
@@ -16,285 +16,472 @@
     <meta property="og:title" content="Divij Mothe | SDET & AI Test Automation">
     <meta
         property="og:description"
-        content="Engineering scalable test automation with Playwright, Java, TypeScript, APIs and AI."
+        content="SDET building modern automation frameworks across UI, API, AI and CI/CD."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://divijqa.github.io/">
+
+    <meta name="theme-color" content="#07090d">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header class="nav">
-    <div class="container nav-inner">
-        <a href="#" class="logo">divij<span>qa</span></a>
+<!-- =========================
+     HEADER
+========================= -->
 
-        <nav>
+<header class="site-header">
+
+    <div class="container nav-container">
+
+        <a href="#" class="brand" aria-label="Divij Mothe home">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span>divijqa</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
-            <a href="#github">GitHub</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <a
+            class="nav-github"
+            href="https://github.com/divijqa"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            GitHub ↗
+        </a>
+
     </div>
+
 </header>
+
 
 <main>
 
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero">
+
     <div class="container hero-grid">
 
-        <div class="hero-content">
+        <div class="hero-copy">
+
+            <div class="status-line">
+                <span class="status-dot"></span>
+                Building AI-assisted test automation
+            </div>
 
             <p class="eyebrow">
                 SOFTWARE DEVELOPMENT ENGINEER IN TEST
             </p>
 
             <h1>
-                Building the next generation of
-                <span>AI-powered test automation.</span>
+                Engineering
+                <span>smarter test automation.</span>
             </h1>
 
             <p class="hero-description">
-                I design automation frameworks and developer-focused QA
-                infrastructure across web, API, CI/CD and AI-assisted
-                testing.
+                I build scalable automation frameworks across web, APIs,
+                CI/CD and AI-assisted testing—with a focus on reliability,
+                maintainability and practical engineering.
             </p>
 
-            <div class="hero-tags">
-                <span>Playwright</span>
-                <span>Java</span>
-                <span>TypeScript</span>
-                <span>REST APIs</span>
-                <span>MCP</span>
-                <span>LLMs</span>
-            </div>
-
             <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">
-                    Explore Projects
+
+                <a href="#projects" class="button button-primary">
+                    View My Work
+                    <span>↓</span>
                 </a>
 
                 <a
                     href="https://github.com/divijqa"
+                    class="button button-secondary"
                     target="_blank"
-                    class="btn btn-secondary"
+                    rel="noopener noreferrer"
                 >
                     GitHub
+                    <span>↗</span>
                 </a>
+
+            </div>
+
+            <div class="hero-stack">
+
+                <span>Playwright</span>
+                <span>Java</span>
+                <span>TypeScript</span>
+                <span>RestAssured</span>
+                <span>MCP</span>
+                <span>LLMs</span>
+
             </div>
 
         </div>
 
-        <div class="hero-card">
 
-            <div class="terminal">
-                <div class="terminal-header">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <div class="hero-visual">
+
+            <div class="code-window">
+
+                <div class="window-bar">
+                    <div class="window-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span class="window-title">
+                        automation.ts
+                    </span>
                 </div>
 
-<pre>
-$ whoami
+                <div class="code-body">
 
-SDET
-Automation Engineer
-AI Test Engineering
+<pre><code><span class="code-muted">01</span> <span class="code-keyword">const</span> agent = <span class="code-function">createAgent</span>({
+<span class="code-muted">02</span>     browser: <span class="code-string">"playwright"</span>,
+<span class="code-muted">03</span>     model: <span class="code-string">"local-llm"</span>,
+<span class="code-muted">04</span>     protocol: <span class="code-string">"mcp"</span>
+<span class="code-muted">05</span> });
+<span class="code-muted">06</span>
+<span class="code-muted">07</span> <span class="code-keyword">await</span> agent.<span class="code-function">inspect</span>();
+<span class="code-muted">08</span> <span class="code-keyword">await</span> agent.<span class="code-function">act</span>();
+<span class="code-muted">09</span> <span class="code-keyword">await</span> agent.<span class="code-function">verify</span>();
+<span class="code-muted">10</span>
+<span class="code-muted">11</span> <span class="code-comment">// reliable automation</span></code></pre>
 
-$ stack
+                </div>
 
-Playwright
-Java
-TypeScript
-RestAssured
-MCP
-LLMs
-CI/CD
-</pre>
+            </div>
+
+            <div class="visual-badge badge-one">
+                <strong>AI</strong>
+                <span>Assisted</span>
+            </div>
+
+            <div class="visual-badge badge-two">
+                <strong>API</strong>
+                <span>Automation</span>
+            </div>
+
+            <div class="visual-badge badge-three">
+                <strong>UI</strong>
+                <span>Automation</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-number">01</span>
+
+            <div>
+                <p class="section-label">ABOUT</p>
+                <h2>Quality engineering with an engineering mindset.</h2>
+            </div>
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-main">
+
+                <p class="large-text">
+                    My work sits at the intersection of
+                    <strong>test automation, software engineering and AI.</strong>
+                </p>
+
+                <p>
+                    I build automation systems rather than isolated scripts:
+                    reusable browser frameworks, API clients, CI/CD workflows,
+                    AI-assisted agents and tooling that helps teams validate
+                    software faster and with greater confidence.
+                </p>
+
+                <p>
+                    My current engineering focus is exploring how
+                    <strong>Playwright, local LLMs, MCP and automation architecture</strong>
+                    can work together without sacrificing determinism,
+                    observability and maintainability.
+                </p>
+
+            </div>
+
+
+            <div class="about-aside">
+
+                <div class="stat-card">
+                    <span class="stat-number">UI</span>
+                    <span class="stat-label">Browser automation</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-number">API</span>
+                    <span class="stat-label">Service automation</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-number">AI</span>
+                    <span class="stat-label">Agentic testing</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-number">CI</span>
+                    <span class="stat-label">Continuous execution</span>
+                </div>
 
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 
-<section id="about" class="section">
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects" class="section projects-section">
+
     <div class="container">
 
-        <p class="section-label">01 / ABOUT</p>
+        <div class="section-heading">
+            <span class="section-number">02</span>
 
-        <h2>Engineering quality into software.</h2>
-
-        <p class="section-description">
-            I build automation frameworks that move beyond simple test
-            execution toward intelligent, maintainable and scalable
-            quality engineering systems.
-        </p>
-
-        <div class="focus-grid">
-
-            <article>
-                <h3>Web Automation</h3>
-                <p>
-                    Playwright, Selenium, Cucumber and modern browser
-                    automation architectures.
-                </p>
-            </article>
-
-            <article>
-                <h3>API Automation</h3>
-                <p>
-                    REST API validation, contract testing, reusable clients
-                    and service-level automation with RestAssured.
-                </p>
-            </article>
-
-            <article>
-                <h3>AI Test Engineering</h3>
-                <p>
-                    Local LLMs, agentic workflows, MCP and AI-assisted
-                    failure analysis and automation.
-                </p>
-            </article>
-
-            <article>
-                <h3>CI/CD Engineering</h3>
-                <p>
-                    Jenkins-based execution, reporting, artifact handling
-                    and repeatable automation pipelines.
-                </p>
-            </article>
-
+            <div>
+                <p class="section-label">FEATURED PROJECTS</p>
+                <h2>Four projects. One engineering direction.</h2>
+            </div>
         </div>
 
-    </div>
-</section>
+
+        <p class="section-intro">
+            A selection of open-source work focused on automation architecture,
+            AI-assisted testing, API engineering and QA analytics.
+        </p>
 
 
-<section id="projects" class="section section-dark">
+        <div class="projects-grid">
 
-    <div class="container">
+            <!-- Project 1 -->
 
-        <p class="section-label">02 / FEATURED WORK</p>
+            <article class="project-card project-featured">
 
-        <h2>Open-source engineering projects.</h2>
+                <div class="project-top">
 
-        <div class="project-grid">
+                    <span class="project-index">01</span>
 
-            <article class="project-card featured">
+                    <span class="project-category">
+                        AI / BROWSER AUTOMATION
+                    </span>
 
-                <div class="project-number">01</div>
+                </div>
+
+                <div class="project-icon">◈</div>
 
                 <h3>Playwright AI Agent</h3>
 
                 <p>
-                    Autonomous web automation using Playwright,
-                    LangChain and a locally hosted LLM through Ollama.
+                    AI-assisted browser automation using Playwright,
+                    LangChain and a locally hosted Ollama model.
+                    The project explores agent-driven field mapping,
+                    browser interaction and a traditional automation
+                    fallback mode.
                 </p>
 
-                <div class="project-stack">
+                <div class="tech-list">
                     <span>TypeScript</span>
                     <span>Playwright</span>
                     <span>LangChain</span>
                     <span>Ollama</span>
                 </div>
 
-                <a
-                    href="https://github.com/divijqa/playwright-ai-agent"
-                    target="_blank"
-                >
-                    View repository →
-                </a>
+                <div class="project-footer">
+
+                    <span class="project-status">
+                        ● Active
+                    </span>
+
+                    <a
+                        href="https://github.com/divijqa/playwright-ai-agent"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Repository ↗
+                    </a>
+
+                </div>
 
             </article>
 
 
+            <!-- Project 2 -->
+
             <article class="project-card">
 
-                <div class="project-number">02</div>
+                <div class="project-top">
+
+                    <span class="project-index">02</span>
+
+                    <span class="project-category">
+                        MCP / BDD
+                    </span>
+
+                </div>
+
+                <div class="project-icon">◇</div>
 
                 <h3>Playwright MCP Self-Healing</h3>
 
                 <p>
-                    MCP-powered BDD automation that analyzes accessibility
-                    tree state and performs dynamic runtime routing and
-                    recovery.
+                    Proof of concept combining Cucumber, Playwright and
+                    the Model Context Protocol to inspect live accessibility
+                    trees and route automation according to application state.
                 </p>
 
-                <div class="project-stack">
+                <div class="tech-list">
                     <span>TypeScript</span>
-                    <span>Playwright</span>
                     <span>Cucumber</span>
+                    <span>Playwright</span>
                     <span>MCP</span>
                 </div>
 
-                <a
-                    href="https://github.com/divijqa/playwright-mcp-poc"
-                    target="_blank"
-                >
-                    View repository →
-                </a>
+                <div class="project-footer">
+
+                    <span class="project-status">
+                        ● POC
+                    </span>
+
+                    <a
+                        href="https://github.com/divijqa/playwright-mcp-poc"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Repository ↗
+                    </a>
+
+                </div>
 
             </article>
 
 
+            <!-- Project 3 -->
+
             <article class="project-card">
 
-                <div class="project-number">03</div>
+                <div class="project-top">
 
-                <h3>Spring Boot + RestAssured MCP</h3>
+                    <span class="project-index">03</span>
+
+                    <span class="project-category">
+                        API / JAVA
+                    </span>
+
+                </div>
+
+                <div class="project-icon">▣</div>
+
+                <h3>Spring Boot + RestAssured</h3>
 
                 <p>
-                    API automation architecture using Spring Boot,
-                    RestAssured and reusable domain-oriented client
-                    abstractions.
+                    API automation reference architecture using Spring Boot,
+                    RestAssured and JUnit 5, with reusable domain client
+                    abstractions that keep HTTP configuration out of tests.
                 </p>
 
-                <div class="project-stack">
-                    <span>Java</span>
+                <div class="tech-list">
+                    <span>Java 17</span>
                     <span>Spring Boot</span>
                     <span>RestAssured</span>
                     <span>JUnit 5</span>
                 </div>
 
-                <a
-                    href="https://github.com/divijqa/springboot-restassured-mcp-poc"
-                    target="_blank"
-                >
-                    View repository →
-                </a>
+                <div class="project-footer">
+
+                    <span class="project-status">
+                        ● POC
+                    </span>
+
+                    <a
+                        href="https://github.com/divijqa/springboot-restassured-mcp-poc"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Repository ↗
+                    </a>
+
+                </div>
 
             </article>
 
 
+            <!-- Project 4 -->
+
             <article class="project-card">
 
-                <div class="project-number">04</div>
+                <div class="project-top">
+
+                    <span class="project-index">04</span>
+
+                    <span class="project-category">
+                        QA PLATFORM
+                    </span>
+
+                </div>
+
+                <div class="project-icon">▤</div>
 
                 <h3>Dynamic QA Analytics</h3>
 
                 <p>
-                    Full-stack QA analytics platform using Next.js,
-                    TypeScript, Prisma and PostgreSQL.
+                    Full-stack QA analytics dashboard designed to visualize
+                    automation runtimes, latency parameters and telemetry
+                    using a relational PostgreSQL data layer.
                 </p>
 
-                <div class="project-stack">
+                <div class="tech-list">
                     <span>Next.js</span>
                     <span>TypeScript</span>
                     <span>Prisma</span>
                     <span>PostgreSQL</span>
                 </div>
 
-                <a
-                    href="https://github.com/divijqa/dynamic-qa-dashboard"
-                    target="_blank"
-                >
-                    View repository →
-                </a>
+                <div class="project-footer">
+
+                    <span class="project-status">
+                        ● Active
+                    </span>
+
+                    <a
+                        href="https://github.com/divijqa/dynamic-qa-dashboard"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Repository ↗
+                    </a>
+
+                </div>
 
             </article>
 
@@ -305,44 +492,184 @@ CI/CD
 </section>
 
 
+<!-- =========================
+     ENGINEERING APPROACH
+========================= -->
+
+<section class="section architecture-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-number">03</span>
+
+            <div>
+                <p class="section-label">ENGINEERING APPROACH</p>
+                <h2>Automation is more than test execution.</h2>
+            </div>
+        </div>
+
+
+        <div class="architecture">
+
+            <div class="architecture-node">
+                <span class="node-number">01</span>
+                <strong>Intent</strong>
+                <small>Test objective</small>
+            </div>
+
+            <div class="architecture-arrow">→</div>
+
+            <div class="architecture-node">
+                <span class="node-number">02</span>
+                <strong>Context</strong>
+                <small>Application state</small>
+            </div>
+
+            <div class="architecture-arrow">→</div>
+
+            <div class="architecture-node">
+                <span class="node-number">03</span>
+                <strong>Action</strong>
+                <small>Browser / API</small>
+            </div>
+
+            <div class="architecture-arrow">→</div>
+
+            <div class="architecture-node">
+                <span class="node-number">04</span>
+                <strong>Verification</strong>
+                <small>Expected outcome</small>
+            </div>
+
+        </div>
+
+
+        <div class="architecture-caption">
+            Designing automation around intent, application state,
+            controlled actions and observable results.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
 <section id="skills" class="section">
 
     <div class="container">
 
-        <p class="section-label">03 / STACK</p>
+        <div class="section-heading">
+            <span class="section-number">04</span>
 
-        <h2>Tools I build with.</h2>
+            <div>
+                <p class="section-label">ENGINEERING STACK</p>
+                <h2>Tools I use to build quality systems.</h2>
+            </div>
+        </div>
+
 
         <div class="skills-grid">
 
-            <div>
-                <h3>Automation</h3>
-                <p>Playwright · Selenium · Cypress · Cucumber · Appium</p>
+            <div class="skill-group">
+
+                <div class="skill-icon">UI</div>
+
+                <h3>Browser Automation</h3>
+
+                <div class="skill-items">
+                    <span>Playwright</span>
+                    <span>Selenium</span>
+                    <span>Cypress</span>
+                    <span>Cucumber</span>
+                    <span>Appium</span>
+                </div>
+
             </div>
 
-            <div>
-                <h3>Languages</h3>
-                <p>Java · TypeScript · JavaScript · Python</p>
-            </div>
 
-            <div>
+            <div class="skill-group">
+
+                <div class="skill-icon">API</div>
+
                 <h3>API & Services</h3>
-                <p>REST · RestAssured · Postman · SOAP</p>
+
+                <div class="skill-items">
+                    <span>RestAssured</span>
+                    <span>REST</span>
+                    <span>Postman</span>
+                    <span>SOAP</span>
+                </div>
+
             </div>
 
-            <div>
-                <h3>AI Engineering</h3>
-                <p>LLMs · Ollama · LangChain · MCP · Agentic Workflows</p>
+
+            <div class="skill-group">
+
+                <div class="skill-icon">AI</div>
+
+                <h3>AI & Agentic Testing</h3>
+
+                <div class="skill-items">
+                    <span>LLMs</span>
+                    <span>Ollama</span>
+                    <span>LangChain</span>
+                    <span>MCP</span>
+                    <span>AI Agents</span>
+                </div>
+
             </div>
 
-            <div>
-                <h3>CI/CD</h3>
-                <p>Jenkins · Maven · Gradle · GitHub Actions</p>
+
+            <div class="skill-group">
+
+                <div class="skill-icon">DEV</div>
+
+                <h3>Languages</h3>
+
+                <div class="skill-items">
+                    <span>Java</span>
+                    <span>TypeScript</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                </div>
+
             </div>
 
-            <div>
+
+            <div class="skill-group">
+
+                <div class="skill-icon">CI</div>
+
+                <h3>CI / CD</h3>
+
+                <div class="skill-items">
+                    <span>Jenkins</span>
+                    <span>GitHub Actions</span>
+                    <span>Maven</span>
+                    <span>Gradle</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-group">
+
+                <div class="skill-icon">DB</div>
+
                 <h3>Data</h3>
-                <p>PostgreSQL · Oracle · SQL Server · Prisma</p>
+
+                <div class="skill-items">
+                    <span>PostgreSQL</span>
+                    <span>SQL Server</span>
+                    <span>Oracle</span>
+                    <span>Prisma</span>
+                </div>
+
             </div>
 
         </div>
@@ -352,29 +679,37 @@ CI/CD
 </section>
 
 
-<section id="github" class="section section-dark">
+<!-- =========================
+     GITHUB CTA
+========================= -->
 
-    <div class="container github-section">
+<section class="github-section">
+
+    <div class="container github-inner">
 
         <div>
 
-            <p class="section-label">04 / OPEN SOURCE</p>
+            <p class="section-label">OPEN SOURCE</p>
 
-            <h2>Code is the portfolio.</h2>
+            <h2>
+                The code is where
+                <span>the details live.</span>
+            </h2>
 
             <p>
-                Explore the frameworks, automation prototypes and
-                engineering experiments I publish on GitHub.
+                Explore the implementation, architecture, experiments
+                and evolution behind my automation projects.
             </p>
 
         </div>
 
         <a
+            class="button button-primary button-large"
             href="https://github.com/divijqa"
             target="_blank"
-            class="btn btn-primary"
+            rel="noopener noreferrer"
         >
-            View GitHub Profile →
+            Explore GitHub ↗
         </a>
 
     </div>
@@ -382,33 +717,39 @@ CI/CD
 </section>
 
 
-<section id="contact" class="section contact">
+<!-- =========================
+     CONTACT
+========================= -->
 
-    <div class="container">
+<section id="contact" class="section contact-section">
 
-        <p class="section-label">05 / CONTACT</p>
+    <div class="container contact-inner">
+
+        <p class="section-label">CONTACT</p>
 
         <h2>Let's build better automation.</h2>
 
         <p>
-            Interested in QA engineering, automation architecture,
-            AI-assisted testing or open-source collaboration?
+            Open to conversations around test automation,
+            QA engineering, AI-assisted testing and automation architecture.
         </p>
 
         <div class="contact-links">
 
             <a
-                href="https://www.linkedin.com/in/divij-m/"
+                href="https://github.com/divijqa"
                 target="_blank"
+                rel="noopener noreferrer"
             >
-                LinkedIn
+                GitHub ↗
             </a>
 
             <a
-                href="https://github.com/divijqa"
+                href="https://www.linkedin.com/"
                 target="_blank"
+                rel="noopener noreferrer"
             >
-                GitHub
+                LinkedIn ↗
             </a>
 
         </div>
@@ -420,13 +761,26 @@ CI/CD
 </main>
 
 
-<footer>
-    <div class="container">
-        <p>
-            © <span id="year"></span> Divij Mothe · SDET · AI Test Engineering
-        </p>
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-inner">
+
+        <span>
+            © <span id="year"></span> Divij Mothe
+        </span>
+
+        <span>
+            SDET · AI Test Automation
+        </span>
+
     </div>
+
 </footer>
+
 
 <script src="js/script.js"></script>
 

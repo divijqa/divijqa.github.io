@@ -1,21 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    /* ========================================
+       CURRENT YEAR
+    ======================================== */
+
     const yearElement = document.getElementById("year");
 
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
 
-    const internalLinks = document.querySelectorAll('a[href^="#"]');
+
+    /* ========================================
+       SMOOTH INTERNAL NAVIGATION
+    ======================================== */
+
+    const internalLinks =
+        document.querySelectorAll('a[href^="#"]');
 
     internalLinks.forEach((link) => {
+
         link.addEventListener("click", (event) => {
-            const targetId = link.getAttribute("href");
+
+            const targetId =
+                link.getAttribute("href");
 
             if (!targetId || targetId === "#") {
                 return;
             }
 
-            const target = document.querySelector(targetId);
+            const target =
+                document.querySelector(targetId);
 
             if (!target) {
                 return;
@@ -27,6 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 behavior: "smooth",
                 block: "start"
             });
+
         });
+
     });
+
 });

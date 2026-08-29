@@ -212,62 +212,11 @@ h2 {
 }
 
 .brand-mark {
-    position: relative;
-
     width: 32px;
     height: 32px;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-
-    border:
-        1px solid var(--border-strong);
-
-    border-radius: 8px;
-
-    color: var(--text);
-
-    font-family:
-        "SFMono-Regular",
-        Consolas,
-        monospace;
-
-    font-size: 0.79rem;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: 0;
-}
-
-.monogram-d,
-.monogram-m {
-    position: relative;
-    z-index: 1;
-}
-
-.monogram-d {
-    justify-self: end;
-}
-
-.monogram-m {
-    justify-self: start;
-    margin-left: -1px;
-}
-
-.monogram-node {
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 13px;
-
-    width: 4px;
-    height: 4px;
-
-    border-radius: 50%;
-
-    background: #3ba7ff;
-
-    box-shadow: 0 0 0 2px rgba(59, 167, 255, 0.14);
+    display: block;
+    flex: 0 0 auto;
 }
 
 .desktop-nav {

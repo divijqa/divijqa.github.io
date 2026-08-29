@@ -190,6 +190,8 @@ h2 {
     display: flex;
     align-items: center;
 
+    flex-wrap: nowrap;
+
     gap: 28px;
 }
 
@@ -1334,6 +1336,14 @@ h2 {
 ======================================== */
 
 @media (max-width: 1050px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
 
     .hero-grid {
         grid-template-columns: 1fr;

@@ -794,6 +794,96 @@ h2 {
     font-size: 0.92rem;
 }
 
+.career-timeline {
+    margin-top: 52px;
+    padding: 24px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    background: rgba(255, 255, 255, 0.012);
+}
+
+.timeline-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+
+    color: var(--accent-light);
+
+    font-family:
+        "SFMono-Regular",
+        Consolas,
+        monospace;
+
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.timeline-years {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--muted);
+
+    letter-spacing: 0;
+}
+
+.timeline-years i {
+    width: 86px;
+    height: 1px;
+
+    background: var(--border-strong);
+}
+
+.timeline-stages {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+
+    margin-top: 24px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.timeline-stages li {
+    position: relative;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--border-strong);
+
+    color: var(--text-soft);
+
+    font-size: 0.76rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.timeline-stages li::before {
+    content: "";
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--accent-light);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.timeline-stages li:last-child {
+    color: var(--text);
+}
+
 .experience-list {
     display: flex;
     flex-direction: column;
@@ -1445,6 +1535,33 @@ h2 {
 
     .hero-actions {
         flex-wrap: wrap;
+    }
+
+    .career-timeline {
+        padding: 20px;
+    }
+
+    .timeline-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .timeline-stages {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .timeline-stages li {
+        padding: 15px 0 15px 19px;
+
+        border-top: 0;
+        border-left: 1px solid var(--border-strong);
+    }
+
+    .timeline-stages li::before {
+        top: 19px;
+        left: -4px;
     }
 
     .hero-visual {

@@ -482,7 +482,6 @@ h2 {
     background: var(--paper-strong);
 }
 
-.project-card.featured { background: #fff; }
 .project-card:hover { background: var(--blue-pale); }
 .project-card h3 { margin-top: 26px; font-size: 1.55rem; }
 .project-card p { margin-top: 11px; color: var(--ink-soft); font-size: 0.9rem; }

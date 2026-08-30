@@ -1057,12 +1057,9 @@ h2 {
 .project-top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    gap: 15px;
 }
 
-.project-index {
+.project-label {
     color: var(--accent-light);
 
     font-family:
@@ -1070,44 +1067,13 @@ h2 {
         Consolas,
         monospace;
 
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 800;
-}
-
-.project-category {
-    color: var(--muted);
-
-    font-size: 0.62rem;
-    font-weight: 800;
-
-    letter-spacing: 0.11em;
-}
-
-.project-icon {
-    width: 44px;
-    height: 44px;
-
-    display: grid;
-    place-items: center;
-
-    margin-top: 34px;
-
-    border:
-        1px solid
-        rgba(133, 120, 255, 0.25);
-
-    border-radius: 12px;
-
-    background:
-        var(--accent-soft);
-
-    color: var(--accent-light);
-
-    font-size: 0.95rem;
+    letter-spacing: 0.1em;
 }
 
 .project-card h3 {
-    margin-top: 18px;
+    margin-top: 28px;
 
     font-size: 1.42rem;
 }
@@ -1164,7 +1130,7 @@ h2 {
         Consolas,
         monospace;
 
-    font-size: 0.64rem;
+    font-size: 0.68rem;
     font-weight: 700;
 }
 

@@ -1343,7 +1343,25 @@ h2 {
     }
 
     .hero-visual {
-        min-height: 410px;
+        min-height: 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .code-window {
+        grid-column: 1 / -1;
+    }
+
+    .visual-badge {
+        position: static;
+
+        min-height: 82px;
+
+        justify-content: center;
+
+        padding: 12px;
     }
 
     .about-grid {
@@ -1430,11 +1448,11 @@ h2 {
     }
 
     .hero-visual {
-        min-height: 345px;
+        min-height: 0;
     }
 
     .visual-badge {
-        display: none;
+        display: flex;
     }
 
     .section-heading {

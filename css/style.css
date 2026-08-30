@@ -1090,24 +1090,27 @@ h2 {
     display: flex;
     flex-wrap: wrap;
 
-    gap: 7px;
+    column-gap: 0;
 
     margin-top: 21px;
 }
 
 .tech-list span {
-    padding:
-        5px 8px;
-
-    border:
-        1px solid var(--border);
-
-    border-radius: 999px;
-
     color: var(--text-soft);
 
-    font-size: 0.65rem;
+    font-family:
+        "SFMono-Regular",
+        Consolas,
+        monospace;
+
+    font-size: 0.68rem;
     font-weight: 700;
+}
+
+.tech-list span:not(:last-child)::after {
+    content: " · ";
+
+    color: var(--muted);
 }
 
 .project-footer {

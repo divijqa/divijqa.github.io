@@ -189,7 +189,7 @@ h2 {
 }
 
 .hero-grid {
-    min-height: calc(100vh - 70px);
+    min-height: min(740px, calc(100vh - 70px));
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(390px, 0.85fr);
     align-items: center;
@@ -275,6 +275,7 @@ h2 {
 
 .code-window {
     border: 1px solid var(--ink);
+    border-radius: 0;
     background: var(--ink);
     color: #dce5ea;
 }
@@ -324,30 +325,6 @@ h2 {
 .keyword { color: #bdcbff; }
 .function { color: #8ac3e8; }
 .string { color: #b4d9b0; }
-
-.visual-badge {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    padding: 9px 11px;
-    border: 1px solid var(--line-strong);
-    background: var(--paper);
-}
-
-.visual-badge strong {
-    font-family: "SFMono-Regular", Menlo, Consolas, monospace;
-    font-size: 0.72rem;
-}
-
-.visual-badge span {
-    color: var(--ink-soft);
-    font-size: 0.65rem;
-}
-
-.badge-one { top: -18px; right: -18px; }
-.badge-two { bottom: -25px; left: -25px; }
-.badge-three { bottom: -25px; right: 35px; }
 
 .about-grid,
 .experience-grid {
@@ -505,7 +482,6 @@ h2 {
     background: var(--paper-strong);
 }
 
-.project-card.featured { background: #fff; }
 .project-card:hover { background: var(--blue-pale); }
 .project-card h3 { margin-top: 26px; font-size: 1.55rem; }
 .project-card p { margin-top: 11px; color: var(--ink-soft); font-size: 0.9rem; }
@@ -561,9 +537,8 @@ h2 {
     .desktop-nav { display: none; }
     .nav-actions { margin-left: auto; }
     .hero-grid { min-height: auto; grid-template-columns: 1fr; gap: 64px; padding: 90px 0; }
-    .hero-visual { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+    .hero-visual { display: block; }
     .code-window { grid-column: 1 / -1; }
-    .visual-badge { position: static; min-height: 76px; justify-content: center; background: var(--paper); border: 0; }
     .about-grid, .experience-grid { grid-template-columns: 1fr; gap: 38px; }
     .experience-highlights { grid-template-columns: repeat(2, 1fr); }
     .experience-highlight:nth-child(2) { border-right: 0; }

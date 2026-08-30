@@ -326,6 +326,32 @@ h2 {
 .function { color: #8ac3e8; }
 .string { color: #b4d9b0; }
 
+.visual-badge {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 104px;
+    padding: 10px 12px;
+    border: 1px solid var(--line-strong);
+    background: var(--paper);
+}
+
+.visual-badge strong {
+    color: var(--ink);
+    font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+}
+
+.visual-badge span {
+    color: var(--ink-soft);
+    font-size: 0.68rem;
+}
+
+.badge-one { top: -18px; right: -22px; }
+.badge-two { bottom: -22px; left: -28px; }
+.badge-three { right: 26px; bottom: -22px; }
+
 .about-grid,
 .experience-grid {
     display: grid;
@@ -524,7 +550,7 @@ h2 {
 
 .contact-section { text-align: center; }
 .contact-inner { max-width: 800px; }
-.contact-inner h2 { margin-inline: auto; }
+.contact-inner h2 { max-width: 680px; margin-inline: auto; font-size: clamp(2.2rem, 3.4vw, 3.6rem); }
 .contact-inner > p:not(.section-label) { max-width: 600px; margin: 17px auto 0; color: var(--ink-soft); }
 .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0; margin-top: 30px; }
 .contact-links a { padding: 0 15px; border-right: 1px solid var(--line-strong); color: var(--blue); font-size: 0.84rem; font-weight: 800; }
@@ -537,8 +563,9 @@ h2 {
     .desktop-nav { display: none; }
     .nav-actions { margin-left: auto; }
     .hero-grid { min-height: auto; grid-template-columns: 1fr; gap: 64px; padding: 90px 0; }
-    .hero-visual { display: block; }
+    .hero-visual { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
     .code-window { grid-column: 1 / -1; }
+    .visual-badge { position: static; min-width: 0; min-height: 72px; justify-content: center; border: 0; background: var(--paper); }
     .about-grid, .experience-grid { grid-template-columns: 1fr; gap: 38px; }
     .experience-highlights { grid-template-columns: repeat(2, 1fr); }
     .experience-highlight:nth-child(2) { border-right: 0; }

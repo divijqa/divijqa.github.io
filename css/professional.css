@@ -570,7 +570,16 @@ h2 {
 
 @media (max-width: 1050px) {
     .desktop-nav { display: none; }
-    .nav-actions { margin-left: auto; }
+    .nav-actions { display: none; }
+    .mobile-menu { position: relative; display: block; margin-left: auto; }
+    .mobile-menu summary { min-height: 38px; display: flex; align-items: center; padding: 0 12px; border: 1px solid var(--ink); color: var(--ink); cursor: pointer; font-size: 0.78rem; font-weight: 800; list-style: none; }
+    .mobile-menu summary::-webkit-details-marker { display: none; }
+    .mobile-menu summary::after { content: "+"; margin-left: 8px; color: var(--blue); font-family: "SFMono-Regular", Menlo, Consolas, monospace; }
+    .mobile-menu[open] summary::after { content: "−"; }
+    .mobile-menu nav { position: absolute; top: calc(100% + 8px); right: 0; z-index: 30; width: 210px; display: grid; border: 1px solid var(--ink); background: var(--paper); }
+    .mobile-menu nav a { padding: 11px 13px; border-bottom: 1px solid var(--line); color: var(--ink); font-size: 0.82rem; font-weight: 700; }
+    .mobile-menu nav a:last-child { border-bottom: 0; }
+    .mobile-menu nav a:hover { background: var(--blue-pale); color: var(--blue-dark); }
     .hero-grid { min-height: auto; grid-template-columns: 1fr; gap: 64px; padding: 90px 0; }
     .hero-visual { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
     .code-window { grid-column: 1 / -1; }
@@ -589,16 +598,7 @@ h2 {
 @media (max-width: 760px) {
     .section { padding: 76px 0; }
     .nav-container { min-height: 62px; }
-    .nav-actions { display: none; }
-    .mobile-menu { position: relative; display: block; margin-left: auto; }
-    .mobile-menu summary { min-height: 36px; display: flex; align-items: center; padding: 0 11px; border: 1px solid var(--ink); color: var(--ink); cursor: pointer; font-size: 0.76rem; font-weight: 800; list-style: none; }
-    .mobile-menu summary::-webkit-details-marker { display: none; }
-    .mobile-menu summary::after { content: "+"; margin-left: 8px; color: var(--blue); font-family: "SFMono-Regular", Menlo, Consolas, monospace; }
-    .mobile-menu[open] summary::after { content: "−"; }
-    .mobile-menu nav { position: absolute; top: calc(100% + 8px); right: 0; z-index: 30; width: 210px; display: grid; border: 1px solid var(--ink); background: var(--paper); }
-    .mobile-menu nav a { padding: 11px 13px; border-bottom: 1px solid var(--line); color: var(--ink); font-size: 0.82rem; font-weight: 700; }
-    .mobile-menu nav a:last-child { border-bottom: 0; }
-    .mobile-menu nav a:hover { background: var(--blue-pale); color: var(--blue-dark); }
+    .mobile-menu summary { min-height: 36px; padding: 0 11px; font-size: 0.76rem; }
     .hero-grid { padding: 70px 0; }
     .hero h1 { font-size: clamp(3.1rem, 14vw, 5rem); }
     .hero-description { font-size: 1rem; }

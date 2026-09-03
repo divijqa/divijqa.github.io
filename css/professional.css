@@ -163,6 +163,10 @@ h2 {
     flex: 0 0 auto;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .nav-github,
 .button {
     display: inline-flex;
@@ -548,6 +552,11 @@ h2 {
 .github-inner .button-primary { background: #f7f7f4; border-color: #f7f7f4; color: var(--ink); }
 .github-inner .button-primary:hover { background: #9ec4df; border-color: #9ec4df; }
 
+.operations-section { padding: 90px 0; border-bottom: 1px solid var(--line); }
+.operations-inner { display: flex; align-items: center; justify-content: space-between; gap: 45px; }
+.operations-inner h2 { max-width: 650px; }
+.operations-inner p:not(.section-label) { max-width: 620px; margin-top: 15px; color: var(--ink-soft); }
+
 .contact-section { text-align: center; }
 .contact-inner { max-width: 800px; }
 .contact-inner h2 { max-width: 680px; margin-inline: auto; font-size: clamp(2.2rem, 3.4vw, 3.6rem); }
@@ -580,8 +589,16 @@ h2 {
 @media (max-width: 760px) {
     .section { padding: 76px 0; }
     .nav-container { min-height: 62px; }
-    .nav-link { display: none; }
-    .nav-github { min-height: 36px; padding: 0 11px; }
+    .nav-actions { display: none; }
+    .mobile-menu { position: relative; display: block; margin-left: auto; }
+    .mobile-menu summary { min-height: 36px; display: flex; align-items: center; padding: 0 11px; border: 1px solid var(--ink); color: var(--ink); cursor: pointer; font-size: 0.76rem; font-weight: 800; list-style: none; }
+    .mobile-menu summary::-webkit-details-marker { display: none; }
+    .mobile-menu summary::after { content: "+"; margin-left: 8px; color: var(--blue); font-family: "SFMono-Regular", Menlo, Consolas, monospace; }
+    .mobile-menu[open] summary::after { content: "−"; }
+    .mobile-menu nav { position: absolute; top: calc(100% + 8px); right: 0; z-index: 30; width: 210px; display: grid; border: 1px solid var(--ink); background: var(--paper); }
+    .mobile-menu nav a { padding: 11px 13px; border-bottom: 1px solid var(--line); color: var(--ink); font-size: 0.82rem; font-weight: 700; }
+    .mobile-menu nav a:last-child { border-bottom: 0; }
+    .mobile-menu nav a:hover { background: var(--blue-pale); color: var(--blue-dark); }
     .hero-grid { padding: 70px 0; }
     .hero h1 { font-size: clamp(3.1rem, 14vw, 5rem); }
     .hero-description { font-size: 1rem; }
@@ -596,8 +613,8 @@ h2 {
     .timeline-stages li { padding: 14px 0 14px 18px; border-top: 0; border-left: 1px solid var(--line-strong); }
     .timeline-stages li::before { top: 18px; left: -4px; }
     .project-card { min-height: 0; padding: 23px; }
-    .github-inner, .footer-inner { flex-direction: column; align-items: flex-start; }
-    .github-inner { gap: 28px; }
+    .github-inner, .operations-inner, .footer-inner { flex-direction: column; align-items: flex-start; }
+    .github-inner, .operations-inner { gap: 28px; }
     .footer-inner { justify-content: center; padding: 20px 0; }
 }
 
